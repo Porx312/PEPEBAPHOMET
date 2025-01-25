@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Twitter, Send, Menu } from "lucide-react";
-import { Footer } from "@/components/Footer";
+import { Twitter, Send } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className=" relative stile min-h-screen overflow-hidden">
+    <div className="min-h-screen bg-[#FFD700] relative overflow-hidden flex flex-col stile">
       {/* Sunburst Background */}
 
       {/* Navigation */}
