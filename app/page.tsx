@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Twitter, Send } from "lucide-react";
+import { Twitter, Send, Copy } from "lucide-react";
+import { CopyTokenButton } from "@/components/CopyToken";
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       {/* Sunburst Background */}
 
       {/* Navigation */}
-      <nav className="relative z-10 max-w-6xl mx-auto px-4 py-4">
-        <div className="bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 flex items-center justify-between">
+      <nav className="relative z-10 max-w-6xl mx-auto  px-4 py-4">
+        <div className="bg-white/10 gap-10 backdrop-blur-sm rounded-full px-6 py-3 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold">
             $PEPEBAPHOMET
           </Link>
@@ -28,9 +29,7 @@ export default function Home() {
             <Link href="/faq" className=" hover:text-white/70">
             Faq
             </Link> */}
-            <Button className="bg-[#FF6B00] hover:bg-[#FF6B00]/70 text-white rounded-full px-6">
-              BUY $PEPEBAPHOMET
-            </Button>
+            <CopyTokenButton />
           </div>
         </div>
       </nav>
@@ -40,27 +39,24 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-5xl  md:text-7xl font-bold mb-4">
-              <span className="text-[#FF6B00]">LET</span>
+              <span className="color">LET</span>
               <br />
               <span className="text-white">PEPEBAPHOMET</span>
             </h1>
             <p className="text-lg mb-8 max-w-lg">
-              <span className="text-[#FF6B00] font-semibold">
+              <span className="color font-semibold">
                 Fill your wallets with profits
               </span>
               <p className="mt-2 text-white">
                 Get ready for a mystical journey to wealth with PepeBaphomet{" "}
-                <span className="text-orange-400">$BAPHO</span>, the meme coin
-                that blends ancient wisdom with the power of profits. It&apos;s
-                not just a token; it&apos;s a spiritual experience for your
-                portfolio.
+                <span className="color">$BAPHO</span>, the meme coin that blends
+                ancient wisdom with the power of profits. It&apos;s not just a
+                token; it&apos;s a spiritual experience for your portfolio.
               </p>
             </p>
 
             <div className="flex items-center gap-4">
-              <Button className="bg-black hover:bg-black/90 text-white rounded-full px-8 py-6 text-lg">
-                BUY $PEPEBAPHOMET
-              </Button>
+              <CopyTokenButton />
               <Link href="https://x.com/PepeBapho" target="_blank">
                 <Button
                   variant="outline"
