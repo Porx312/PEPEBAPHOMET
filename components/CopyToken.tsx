@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Check, Copy } from "lucide-react";
-
 const TOKEN = "8jumsfqCoo19FipaX9Kt7x8Qv2cuVQxtNDqVtu9K9Y9y";
 
 export function CopyTokenButton() {
