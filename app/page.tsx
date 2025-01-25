@@ -51,10 +51,12 @@ export default function Home() {
               <p className="mt-2 text-white">
                 Get ready for a mystical journey to wealth with PepeBaphomet{" "}
                 <span className="text-orange-400">$BAPHO</span>, the meme coin
-                that blends ancient wisdom with the power of profits. It's not
-                just a token; it's a spiritual experience for your portfolio.
+                that blends ancient wisdom with the power of profits. It&apos;s
+                not just a token; it&apos;s a spiritual experience for your
+                portfolio.
               </p>
             </p>
+
             <div className="flex items-center gap-4">
               <Button className="bg-black hover:bg-black/90 text-white rounded-full px-8 py-6 text-lg">
                 BUY $PEPEBAPHOMET
