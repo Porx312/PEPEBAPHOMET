@@ -6,9 +6,9 @@ import { CopyTokenButton } from "@/components/CopyToken";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FFD700] relative overflow-hidden flex flex-col stile">
+    <div className="min-h-screen bg-[#FFD700] relative overflow-hidden flex flex-col ">
       {/* Sunburst Background */}
-
+    <div className="stile"></div>
       {/* Navigation */}
       <nav className="relative z-10 max-w-6xl mx-auto  px-4 py-4">
         <div className="bg-white/10 gap-10 backdrop-blur-sm rounded-full px-6 py-3 flex items-center justify-between">
@@ -38,7 +38,7 @@ export default function Home() {
       <main className="relative  z-10 max-w-6xl mx-auto px-4 pt-12 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 className="text-5xl  md:text-7xl font-bold mb-4">
+            <h1 className="text-4xl  md:text-7xl font-bold mb-4">
               <span className="color">LET</span>
               <br />
               <span className="text-white">PEPEBAPHOMET</span>
@@ -88,6 +88,21 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <div className="absolute bottom-0 w-full">
+        <div className="relative h-16">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full h-8 bg-white transform -rotate-2 flex items-center overflow-hidden">
+              <div className="animate-marquee whitespace-nowrap flex">
+                {Array.from({ length: 150 }).map((_, i) => (
+                  <span key={i} className="mx-4 text-black font-bold flex items-center">
+                    $PEPEBAPHOMET
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -108,3 +108,15 @@ body {
 .Btn:hover .svgIcon path {
   fill: rgb(65, 64, 64);
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 125s linear infinite;
+}
