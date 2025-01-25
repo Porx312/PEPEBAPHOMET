@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Twitter, Send, Copy } from "lucide-react";
+import { Twitter, Send } from "lucide-react";
 import { CopyTokenButton } from "@/components/CopyToken";
 
 export default function Home() {
